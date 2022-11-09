@@ -41,31 +41,126 @@ body {
 .header {
   background: url(../img/bg.png);
   min-height: 100vh;
+  overflow: hidden;
+  object-fit: cover;
 }
 
 .nav {
-  border: 1px solid black;
-  max-width: 1300px;
-  padding: 30px 0px;
+  max-width: 1550px;
+  padding: 40px 0px;
   margin: 0 auto;
   display: flex;
-  justify-content: space-between;
+  justify-content: end;
   align-items: center;
+}
+
+.logo {
+  margin-right: auto;
 }
 
 .nav-header {
   display: flex;
   align-items: center;
   justify-content: center;
-  gap: 40px;
+  gap: 68px;
+  margin-right: 68px;
 }
 
 .nav-link {
   font-size: 15px;
+  font-weight: 400;
   color: white;
+  font-family: "Poppins";
   text-decoration: none;
+  border-bottom: 3px solid #ffd703;
+  border: none;
+  cursor: pointer;
+  border-radius: 5px;
+  display: flex;
+  transition: 0.4s;
+  align-items: center;
+}
+
+.nav-link:hover {
+  color: #000000;
+  border-bottom: 3px solid #ffd703;
+}
+
+.nav-link1 {
+  border-radius: 40px;
+  padding: 10px 45px;
+  border: 1px solid #ffd703;
   display: flex;
   align-items: center;
+  color: #ffd703;
+  transition: 0.6s;
+  font-family: "Poppins";
+  text-decoration: none;
+}
+
+.nav-link1:hover {
+  color: rgb(255, 255, 255);
+  border: 1px solid #000000;
+  box-shadow: 0px 0px 20px 4px #000000;
+}
+
+.nav-link2 {
+  border-radius: 40px;
+  padding: 10px 45px;
+  border: 1px solid #ffd703;
+  display: flex;
+  align-items: center;
+  color: #ffd703;
+  transition: 0.6s;
+  font-family: "Poppins";
+  display: none;
+  text-decoration: none;
+}
+
+.nav-link2:hover {
+  color: rgb(255, 255, 255);
+  border: 1px solid #000000;
+  box-shadow: 0px 0px 20px 4px #000000;
+}
+
+.hamburger {
+  display: none;
+}
+
+@media (max-width: 1120px) {
+  nav {
+    flex-wrap: wrap;
+  }
+  .nav-header {
+    padding: 20px 0px;
+    flex-basis: 100%;
+    order: 1;
+    margin-right: 0;
+  }
+}
+@media (max-width: 776px) {
+  .hamburger {
+    display: inline-flex;
+  }
+  .nav-header {
+    background: rgba(0, 0, 0, 0.568627451);
+    flex-basis: 0;
+    order: 0;
+    position: fixed;
+    flex-direction: column;
+    top: 0;
+    right: 0;
+    width: 250px;
+    gap: 20px;
+    height: 100vh;
+    box-shadow: -1px 0 3px black;
+  }
+  .nav-link1 {
+    display: none;
+  }
+  .nav-link2 {
+    display: inline-flex;
+  }
 }
 
 /*# sourceMappingURL=style.css.map */
