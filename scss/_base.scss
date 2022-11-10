@@ -8,6 +8,7 @@ body {
   background: url(../img/bg.png);
   min-height: 100vh;
   overflow: hidden;
+  background-repeat: no-repeat;
   object-fit: cover;
 }
 .nav {
@@ -19,6 +20,7 @@ body {
   align-items: center;
 }
 .logo {
+  margin-left: 10px;
   margin-right: auto;
 }
 .nav-header {
@@ -80,6 +82,7 @@ body {
   box-shadow: 0px 0px 20px 4px #000000;
 }
 .hamburger {
+  margin-right: 20px;
   display: none;
 }
 @media (max-width: 1120px) {
@@ -103,17 +106,22 @@ body {
     order: 0;
     position: fixed;
     flex-direction: column;
+    transition: 0.6s;
     top: 0;
     right: 0;
     width: 250px;
-    gap: 20px;
+    gap: 30px;
     height: 100vh;
-    box-shadow: -1px 0 3px black;
+    box-shadow: -1px 0 10px rgb(255, 255, 255);
+    transform: translateX(calc(100% + 10px));
   }
   .nav-link1 {
     display: none;
   }
   .nav-link2 {
     display: inline-flex;
+  }
+  .nav-header.is-active {
+    transform: translateX(0);
   }
 }
