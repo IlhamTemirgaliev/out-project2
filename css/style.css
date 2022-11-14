@@ -145,6 +145,7 @@
 
 body {
   margin: 0;
+  background: #f5f5f5;
 }
 
 .header {
@@ -152,7 +153,9 @@ body {
   min-height: 100vh;
   overflow: hidden;
   background-repeat: no-repeat;
-  object-fit: cover;
+  margin-bottom: 0;
+  background-size: cover;
+  padding-bottom: 0;
 }
 
 .nav {
@@ -303,7 +306,7 @@ body {
   max-width: 1550px;
   margin: 0 auto;
   margin-top: 160px;
-  margin-bottom: 150px;
+  margin-bottom: 100px;
 }
 
 .card-header {
@@ -368,6 +371,80 @@ body {
 
 .card:hover .tt2 {
   color: black;
+}
+
+.section {
+  padding: 0;
+  margin: 0;
+}
+
+.box1 {
+  margin: 0 auto;
+  margin-top: 240px;
+  max-width: 1490px;
+  margin-bottom: 240px;
+}
+
+.tb {
+  margin: 0;
+  padding: 0;
+  font-family: "Poppins";
+  font-weight: 400;
+  font-size: 60px;
+}
+
+.card-box1 {
+  display: flex;
+  gap: 26px;
+  align-items: center;
+  flex-wrap: wrap;
+}
+
+.card-section {
+  overflow-x: auto;
+  margin-top: 45px;
+  display: flex;
+  padding-top: 20px;
+  gap: 32px;
+}
+
+.card-box1 {
+  border-radius: 30px 5px 30px 5px;
+  border: 1px solid rgba(0, 0, 0, 0);
+  max-width: 480px;
+  padding-top: 10px;
+  transition: 0.6s;
+  padding-left: 10px;
+}
+
+.tb1 {
+  font-family: "Poppins";
+  font-weight: 400;
+  line-height: 30px;
+  font-size: 32px;
+  margin-bottom: 18px;
+}
+
+.st {
+  font-family: "Poppins";
+  font-weight: 700;
+  font-size: 18px;
+  color: #3fc2bb;
+}
+
+.tb2 {
+  font-family: "Poppins";
+  font-weight: 400;
+  transform: translateY(-40px);
+  font-size: 16px;
+  margin-bottom: 0;
+  padding-bottom: 0;
+}
+
+.card-box1:hover {
+  border: 1px solid rgb(0, 255, 136);
+  transform: translateY(-10px);
+  box-shadow: 0px 0px 10px 0px rgb(0, 255, 136);
 }
 
 @media (max-width: 1120px) {
@@ -453,7 +530,7 @@ body {
     font-size: 20px;
   }
   .card {
-    max-width: px;
+    width: 480px;
   }
   .icon-card {
     text-align: center;
@@ -469,6 +546,32 @@ body {
     padding: 0;
     font-size: 8px;
     margin: 0 auto;
+    text-align: center;
+  }
+}
+@media (max-width: 1380px) {
+  .tb {
+    text-align: center;
+  }
+  .card-box1 {
+    width: 480px;
+    margin-top: 20px;
+  }
+  .box1 {
+    margin-top: 50px;
+  }
+  .tb1 {
+    font-size: 26px;
+  }
+  .tb2 {
+    font-size: 14px;
+  }
+}
+@media (max-width: 940px) {
+  .card-box1 {
+    flex-direction: column;
+  }
+  .tb2 {
     text-align: center;
   }
 }
