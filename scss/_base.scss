@@ -5,6 +5,8 @@ body {
   margin: 0;
 }
 
+// ------------------------------------------------------
+
 // header-nav menu
 
 .header {
@@ -90,7 +92,7 @@ body {
 }
 
 // header-nav/menu
-
+// ------------------------------------------------------
 // header-top info
 
 .header-top {
@@ -132,6 +134,7 @@ body {
   font-size: 22px;
   padding: 14px 72px;
   transition: 0.6s;
+  border: 1px solid rgba(0, 0, 0, 0);
 }
 .btn:hover {
   background: rgba(0, 0, 0, 0.33);
@@ -148,7 +151,7 @@ body {
 }
 
 // header-top info
-
+// ------------------------------------------------------
 // header-botton info
 
 .header-botton {
@@ -214,6 +217,8 @@ body {
 }
 
 // header-button info
+
+// ------------------------------------------------------
 
 // header optimization
 
@@ -321,3 +326,5 @@ body {
 }
 
 // header optimization
+
+// ------------------------------------------------------
