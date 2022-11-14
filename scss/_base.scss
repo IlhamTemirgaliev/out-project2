@@ -13,8 +13,8 @@ body {
   min-height: 100vh;
   overflow: hidden;
   background-repeat: no-repeat;
-  object-fit: cover;
   margin-bottom: 0;
+  background-size: cover;
   padding-bottom: 0;
 }
 .nav {
@@ -228,9 +228,11 @@ body {
   margin: 0 auto;
   margin-top: 240px;
   max-width: 1490px;
+  margin-bottom: 240px;
 }
 .tb {
   margin: 0;
+  padding: 0;
   font-family: "Poppins";
   font-weight: 400;
   font-size: 60px;
@@ -242,8 +244,10 @@ body {
   flex-wrap: wrap;
 }
 .card-section {
+  overflow-x: auto;
   margin-top: 45px;
   display: flex;
+  padding-top: 20px;
   gap: 32px;
 }
 .card-box1 {
@@ -389,3 +393,33 @@ body {
 }
 
 // header optimization
+
+// section optimization
+@media (max-width: 1380px) {
+  .tb {
+    text-align: center;
+  }
+  .card-box1 {
+    width: 480px;
+    margin-top: 20px;
+  }
+  .box1 {
+    margin-top: 50px;
+  }
+  .tb1 {
+    font-size: 26px;
+  }
+  .tb2 {
+    font-size: 14px;
+  }
+}
+@media (max-width: 940px) {
+  .card-box1 {
+    flex-direction: column;
+  }
+  .tb2 {
+    text-align: center;
+  }
+}
+@media (max-width: 776px) {
+}
