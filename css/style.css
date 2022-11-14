@@ -534,18 +534,22 @@ body {
   }
   .icon-card {
     text-align: center;
-    width: 40px;
     margin: 0 auto;
-    height: 40px;
+    margin-top: 32px;
+    margin-left: 32px;
   }
   .tt2 {
+    font-size: 32px;
     padding: 0;
-    font-size: 16px;
+    margin-left: 32px;
+    width: 300px;
   }
   .tt3 {
-    padding: 0;
-    font-size: 8px;
     margin: 0 auto;
+    font-size: 16px;
+    padding: 0;
+    margin-left: 32px;
+    margin-bottom: 32px;
     text-align: center;
   }
 }
@@ -573,6 +577,12 @@ body {
   }
   .tb2 {
     text-align: center;
+  }
+}
+@media (max-width: 876px) {
+  .tb1 {
+    text-align: center;
+    width: 300px;
   }
 }
 
