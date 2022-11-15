@@ -1,3 +1,4 @@
+@charset "UTF-8";
 .hamburger {
   padding: 15px 15px;
   display: inline-block;
@@ -465,6 +466,19 @@ body {
   margin-top: 32px;
 }
 
+.card-section2::-webkit-scrollbar {
+  width: 5px; /* ширина для вертикального скролла */
+  height: 8px; /* высота для горизонтального скролла */
+  background-color: rgba(20, 56, 97, 0.4235294118);
+}
+
+.card-section2::-webkit-scrollbar-thumb {
+  width: 10px;
+  background-color: #089cff;
+  border-radius: 9em;
+  box-shadow: inset 1px 1px 10px #f3faf7;
+}
+
 .bg-box2 {
   position: absolute;
   top: -80px;
@@ -533,7 +547,8 @@ body {
   align-items: center;
   max-width: 480px;
   gap: 20px;
-  border-radius: 4px 4px 50px 4px;
+  border: 1px solid rgba(0, 0, 0, 0);
+  border-radius: 4px 4px 60px 4px;
   transition: 0.6s;
 }
 
@@ -595,12 +610,104 @@ body {
   font-family: "Poppins";
   margin-top: 0;
   font-weight: 400;
+  transition: 0.6s;
   font-size: 12px;
 }
 
 .post:hover {
   transform: translateY(-10px);
+  background: rgb(69, 30, 30);
+  background: linear-gradient(160deg, rgb(69, 30, 30) 12%, rgb(0, 0, 0) 57%);
+  border: 1px solid rgb(255, 0, 0);
+  box-shadow: 0px 0px 20px 0px rgb(255, 0, 0);
+}
+
+.post:hover .p2 {
+  color: white;
+}
+
+.box4 {
+  position: relative;
+  margin: 0 auto;
+  margin-bottom: 200px;
+  max-width: 1490px;
+  height: 100vh;
+  border-radius: 30px;
+  background: url(/img/bgbox4.png);
+  background-size: cover;
+}
+
+.post-box4 {
+  position: absolute;
+  bottom: 120px;
+  left: 30px;
+  max-width: 820px;
+  padding-left: 40px;
+  transition: 0.6s;
+  padding-right: 40px;
+  border-radius: 30px;
+  border: 1px solid rgba(136, 15, 15, 0);
+  background: rgba(255, 255, 255, 0.733);
+}
+
+.title {
+  margin: 0;
+  margin-top: 28px;
+  font-family: "Poppins";
+  font-weight: 400;
+  font-size: 60px;
+}
+
+.title1 {
+  font-family: "Poppins";
+  font-weight: 500;
+  font-size: 16px;
+  max-width: 660px;
+}
+
+.btnn-box4 {
+  display: flex;
+  margin-bottom: 28px;
+  margin-top: 30px;
+  align-items: center;
+}
+
+.icon-svg {
+  margin-right: 20px;
+}
+
+.imgbox4 {
+  margin-right: 220px;
+}
+
+.btn-box4 {
+  margin-right: 150px;
+  font-family: "Poppins";
+  font-weight: 600;
+  font-size: 18px;
+  display: flex;
+  padding: 10px 40px;
+  justify-content: center;
+  cursor: pointer;
+  align-items: center;
+  border-radius: 30px;
+  border: none;
+  background: #ffd703;
+  transition: 0.6s;
+}
+
+.btn-box4:hover {
+  background: rgba(0, 0, 0, 0.6705882353);
+  color: white;
   box-shadow: 0px 0px 10px 0px rgb(0, 255, 136);
+}
+
+.post-box4:hover {
+  color: white;
+  transform: translateY(-10px);
+  background: rgba(0, 0, 0, 0.5411764706);
+  box-shadow: 0px 0px 20px 0px red;
+  border: 1px solid rgb(255, 0, 0);
 }
 
 @media (max-width: 1120px) {
