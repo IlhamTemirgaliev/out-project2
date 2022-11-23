@@ -1280,22 +1280,7 @@ path {
     text-align: center;
     flex-wrap: nowrap;
   }
-  .pt1 {
-    font-size: 26px;
-  }
-  .pt2 {
-    font-size: 26px;
-  }
-  .pt3 {
-    font-size: 26px;
-  }
-  .pt4 {
-    font-size: 26px;
-  }
-  .pt5 {
-    font-size: 26px;
-  }
-  .pt6 {
+  .ts {
     font-size: 26px;
   }
   .box4 {
@@ -1496,22 +1481,7 @@ path {
   .p2 {
     font-size: 10px;
   }
-  .pt1 {
-    font-size: 22px;
-  }
-  .pt2 {
-    font-size: 22px;
-  }
-  .pt3 {
-    font-size: 22px;
-  }
-  .pt4 {
-    font-size: 22px;
-  }
-  .pt5 {
-    font-size: 22px;
-  }
-  .pt6 {
+  .ts {
     font-size: 22px;
   }
   .o1 {
